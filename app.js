@@ -13,8 +13,7 @@ app.get("/", ( req, res) => {
 
 app.get("/read", (req, res ) => {
     let data = jwt.verify(req.cookies.token, "secret");
-    console.log(data);
-    
+    console.log(data); 
 })
 
 app.listen(3000);
